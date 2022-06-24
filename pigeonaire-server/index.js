@@ -14,9 +14,6 @@ app.get("/events/:token", async function (req, res) {
     url: "https://api.courier.com/events",
     headers: {
       "Content-Type": "application/json",
-      "x-courier-client-key":
-        "ZmI5ZDM0MmUtMTQ1Ni00ZDc5LTg0OWEtYTA3MmY5YWRlOTU4",
-      "x-courier-user-id": "Google_116536091822753266253",
       Authorization: `Bearer ${token}`,
     },
   };
